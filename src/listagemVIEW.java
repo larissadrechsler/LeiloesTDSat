@@ -40,6 +40,7 @@ public class listagemVIEW extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         btnVendas = new javax.swing.JButton();
         btnVoltar = new javax.swing.JButton();
+        btnSalvar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -85,6 +86,8 @@ public class listagemVIEW extends javax.swing.JFrame {
             }
         });
 
+        btnSalvar.setText("Salvar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -101,6 +104,8 @@ public class listagemVIEW extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
+                            .addComponent(btnSalvar)
+                            .addGap(18, 18, 18)
                             .addComponent(btnVoltar)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(btnVendas, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -128,7 +133,8 @@ public class listagemVIEW extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnVendas)
-                    .addComponent(btnVoltar))
+                    .addComponent(btnVoltar)
+                    .addComponent(btnSalvar))
                 .addGap(17, 17, 17))
         );
 
@@ -189,6 +195,7 @@ public class listagemVIEW extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSalvar;
     private javax.swing.JButton btnVendas;
     private javax.swing.JButton btnVender;
     private javax.swing.JButton btnVoltar;
